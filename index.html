@@ -22,14 +22,21 @@
     <section id="section2" class="container"> 
 
         
-          <div class="col-3 bg-light p-2 border">
+          <!-- <div class="col-3 bg-light p-2 border">
             <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
                 </div>
                 <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <div id="searchHistory"></div>
               </div>
+          </div> -->
+          <div class="searchBar">
+            <input type="text" class="citySearchField" placeholder="Type City Here">
+            <button class="searchButton" onclick="forecastLookup()" type="submit">Go</button>
+            <div id="searchHistory"></div>
           </div>
+
         <div class="col-3 bg-light p-2 border">
             Atlanta
           </div>
@@ -48,11 +55,16 @@
           <div class="col-3 bg-light p-2 border">
             Columbus
           </div>
+          
 
     </section>
     <section id="section3" class="container">
-        <div class="card w-70 mb-3" >
-            Hello
+        <div class="todayWeather">
+            <div class="container ">
+                <div class="p-2">City Search results</div>
+               
+                <!-- Didnt have time to move this to proper location. But this is where the city search result is to populate -->
+              </div>
 
         </div>
     </section>
@@ -62,40 +74,40 @@
         
         <div class="container">
         <div class="card-group" >
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card bg-secondary text-white">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
               <div class="card-body">
                 <h5 class="card-title">Monday</h5>
                 <p class="card-text">Happy Monday</p>
               </div>
               
             </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card bg-secondary text-white">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
               <div class="card-body">
                 <h5 class="card-title">Tuesday</h5>
                 <p class="card-text">Sorrowful Tuesday</p>
               </div>
               
             </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card bg-secondary text-white">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
               <div class="card-body">
                 <h5 class="card-title">Wednesday</h5>
                 <p class="card-text">Working Wednesday</p>
               </div>
               
             </div>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card bg-secondary text-white">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
                   <h5 class="card-title">Thursday</h5>
                   <p class="card-text">Thinking Thursday</p>
                 </div>
                 
               </div>
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card bg-secondary text-white">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
                   <h5 class="card-title">Friday</h5>
                   <p class="card-text">Fun Friday</p>
